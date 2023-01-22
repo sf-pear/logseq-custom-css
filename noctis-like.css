@@ -124,9 +124,9 @@ html[data-theme='dark'] {
     /* --ct-text-size: 19px; */
     /* --sb-text-size: 15px; */
 
-    --ls-page-title-size: 26px;
+    --ls-page-title-size: 32px;
     --ct-page-title-font-family: var(--ls-font-family);
-    --ls-title-text-color: var(--cp-accent);
+    --ls-title-text-color: var(--cp-black);
 
     /* external link */
 	--ls-link-text-color: var(--cp-accent);
