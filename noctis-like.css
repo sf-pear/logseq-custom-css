@@ -208,6 +208,44 @@ html,
 body {
 	font-weight: var(--ls-font-weight);
     font-size: var(--ls-page-text-size);
+
+}
+
+/* fix alignment of bullets and checkboxes */
+.bullet-container {
+    /* height: 14px !important;
+    width: 14px !important; */
+    position: relative;
+    transform: translate(1px, -3px);
+}
+.form-checkbox, .form-radio {
+    top: -1.5px;
+}
+
+/* fix ui button padding */
+.ui__button.p-1 {
+    padding: 0.25rem 0.5rem!important;
+    border-width: 0px;
+    /* background-color: var(--cp-accent); */
+}
+
+/* change all ui elements blue colour */
+.bg-indigo-600 {
+    background-color: var(--cp-accent);
+}
+
+/* change journal horizontal line colour */
+#journals .journal-item {
+    border-top: 1px solid;
+    border-top-color: var(--lighter-background);
+    margin: 24px 0;
+    min-height: 250px;
+    padding: 24px 0;
+}
+
+/* change vertical line colour */
+.block-children {
+    border-left-color: var(--lighter-background);
 }
 
 /* bold headings and page title */
