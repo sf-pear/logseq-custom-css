@@ -96,11 +96,17 @@ html[data-theme='dark'] {
 
     --cp-white-light: #17232b;
     --cp-white: #1b2932;
-    --cp-white-dark: #24333d;
-    --cp-white-darker: #283f4e;
+    --cp-white-dark: #17232b;
+    --cp-white-darker: #17232b;
     --cp-dark: #586e75;
     --cp-black: #b0cdcb;
     --cp-gray: #657b83;
+
+    --background: #1b2932;
+    --light-background: #24333d;
+    --lighter-background: #24333d;
+    --dark-background: #17232b;
+    --darker-background: #17232b;
 
     --mark-bg: var(--cp-accent-opacity);
     --cp-inline: var(--cp-green-light);
@@ -120,7 +126,6 @@ html[data-theme='dark'] {
     --ls-right-sidebar-width: 600px;
     --ls-main-content-max-width: 1000px;
 
-    --ls-page-text-size: 14px;
     /* --ct-text-size: 19px; */
     /* --sb-text-size: 15px; */
 
@@ -146,7 +151,7 @@ html[data-theme='dark'] {
     --ls-page-blockquote-bg-color: var(--cp-white-dark);
     --ls-page-blockquote-border-color: var(--cp-accent);
 
-    --ls-block-bullet-color: var(--cp-white-darker);
+    --ls-block-bullet-color: var(--cp-dark);
     --ls-block-bullet-active-color: var(--cp-accent);
     --ls-block-bullet-border-color: var(--cp-accent-opacity-semi);
     --ls-bullet-closed-color: var(--cp-accent-opacity);
@@ -202,6 +207,7 @@ html[data-theme='dark'] {
 html,
 body {
 	font-weight: var(--ls-font-weight);
+    font-size: var(--ls-page-text-size);
 }
 
 /* bold headings and page title */
@@ -233,12 +239,13 @@ border-radius: var(--ls-border-radius-low) !important;
 } */
 
 .external-link {
-	border-bottom: none;
+	/* border-bottom: none; */
+    /* text-decoration: underline dotted; */
     font-weight: 600;
 }
 
 .external-link:hover {
-	text-decoration: underline dotted;
+	/* text-decoration: underline dotted; */
     color: var(--cp-accent-opacity-semi);
 }
 
@@ -357,3 +364,41 @@ border-radius: var(--ls-border-radius-low) !important;
 .cm-s-solarized .CodeMirror-nonmatchingbracket { color: #dc322f; }
 .cm-s-solarized .cm-tag { color: #5b858b; }
 .cm-s-solarized .cm-attribute { color: #16a3b6; }
+
+/* side bar stuff *
+/* tab it */
+/* from: https://discuss.logseq.com/t/optimizing-favorites-and-recents/14764 */
+.favorites .bd, .recent .bd {
+    margin-left: 18px;  
+}
+
+
+/* Put nav buttons on one row, no text */
+/* from: https://discuss.logseq.com/t/compressing-icons-in-left-sidebar-to-get-back-more-space/14295 */
+/* Put nav buttons on one row, no text */
+.nav-header {
+    margin-left: 2px;
+  }
+  
+  .nav-header .flex-1 {
+    display: none
+  }
+  
+  .nav-header .item {
+    margin-left: 2px;
+    padding: 2px !important;
+  }
+  
+  .nav-header .ui__icon {
+    margin-right: 0px !important;
+  }
+  
+  .nav-header {
+    flex-direction: row;
+  }
+  
+  .flashcards-nav .inline-block {
+    margin-left: 	2px;
+    margin-top: 2px;
+    padding: 2px;
+  }
